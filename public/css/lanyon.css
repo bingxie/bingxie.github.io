@@ -42,14 +42,14 @@ body {
 
 html {
   font-family: "PT Sans", Georgia, "Times New Roman",
-               "Microsoft YaHei", "微软雅黑",
+               "\5FAE\8F6F\96C5\9ED1", "微软雅黑",
                STXihei, "华文细黑",
                serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "PT Sans", Helvetica, Arial,
-               "Microsoft YaHei", "微软雅黑",
+               "\5FAE\8F6F\96C5\9ED1", "微软雅黑",
                STXihei, "华文细黑",
                sans-serif;
   font-weight: 400;
@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
   visibility: hidden;
   overflow-y: auto;
   font-family: "PT Sans", Helvetica, Arial,
-               "Microsoft YaHei", "微软雅黑",
+               "\5FAE\8F6F\96C5\9ED1", "微软雅黑",
                STXihei, "华文细黑",
                sans-serif;
   font-size: .875rem; /* 15px */
