@@ -1,30 +1,10 @@
 ---
 layout: page
-title: About
+title: About me
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+> 我是一位一直工作在互联网行业的网站开发技术人员。做过网站设计，最开始用PHP，后来用Java构建过比较大的网站系统，然后又做过一段时间的管理，3年前又转回做技术，有幸接触了Ruby，现在很喜欢用Ruby开发网站，正在努力的学习和锻炼争取做一个合格的Full stack web developer。
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+> 目前我在专注开发个人的网站项目，同时参与开源项目，希望能够以此为基础开创自己的公司。
 
-There are currently two themes built on Poole:
-
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+> 真心感谢老婆对我目前工作的支持，感谢父母的理解，感谢上帝在刚刚过去的圣诞节送给了我一个超赞的礼物 - 我的儿子。

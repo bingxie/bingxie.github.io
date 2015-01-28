@@ -11,7 +11,7 @@ relative_permalinks: true
 # Setup
 title:               BigBing
 tagline:             '技术博客'
-description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+description:         '这是一个别名叫大兵的技术人的博客，主要关注Web开发，部署相关的技术。'
 url:                 http://www.bigbing.net
 baseurl:             /
 paginate:            5
