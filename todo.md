@@ -3,6 +3,7 @@ layout: page
 title: Todo List
 ---
 
+* <del>use sitemap gem plugin</del>
 * disqus integration
 * <del>google analytics integration (html5-boilerplate snippets)</del>
 * google site search
@@ -10,3 +11,4 @@ title: Todo List
 * html5-boilerplate learning and integration
 * markdown learning(Jekyll book)
 * html5-boilerplate [responsive design](http://verekia.com/initializr/responsive-template)
+
