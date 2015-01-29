@@ -16,3 +16,5 @@ title: HTML5 Boilerplate
 可以通过[Initializr](http://www.initializr.com/)网站来自定义需要的模板，比如Responsive或者Bootstrap集成后的版本
 
 [Html5 Boilerplate和Bootstrap的集成](http://www.quora.com/Is-Bootstrap-a-complement-OR-an-alternative-to-HTML5-Boilerplate-or-viceversa/answer/Nicolas-Gallagher)
+
+[深入学习基于Html5 Boilerplate的开发](https://github.com/h5bp/html5-boilerplate/blob/v4.3.0/doc/extend.md)
