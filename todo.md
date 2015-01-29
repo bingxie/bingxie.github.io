@@ -4,7 +4,7 @@ title: Todo List
 ---
 
 * <del>use sitemap gem plugin</del>
-* disqus integration
+* <del>disqus integration</del> 290115
 * <del>google analytics integration (html5-boilerplate snippets)</del>
 * google site search
 * add svg icons & using scss
