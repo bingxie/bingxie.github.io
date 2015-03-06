@@ -11,3 +11,5 @@ title: 常用Ruby Gems列表（持续更新）
 [awesome_print](https://github.com/michaeldv/awesome_print) - 漂亮得打印出ruby的对象
 
 [dotenv-rails](https://github.com/bkeepers/dotenv) - 方便配置和使用
+
+[annotate](https://github.com/ctran/annotate_models) - 给ActiveRecord等model加注释
