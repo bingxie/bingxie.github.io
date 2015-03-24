@@ -13,3 +13,7 @@ title: 常用Ruby Gems列表（持续更新）
 [dotenv-rails](https://github.com/bkeepers/dotenv) - 方便配置和使用
 
 [annotate](https://github.com/ctran/annotate_models) - 给ActiveRecord等model加注释
+
+[money](https://github.com/RubyMoney/money) - 处理钱或货币的gem
+
+[money-rails](https://github.com/RubyMoney/money-rails) - Ruby Money与Rails的整合
