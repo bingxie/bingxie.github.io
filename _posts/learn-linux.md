@@ -15,3 +15,30 @@ relative pathnames
 cd - 更改工作目录到先前的工作目录
 
 ##4 探究操作系统
+
+file - Determine file type
+less - View file contents
+
+### ls
+specify multiple directories
+  ls ~ /usr
+--reverse
+  to reverse the order of the sort
+
+-h --human-readable
+  display file sizes in human readable format
+-S
+  sort results by file size
+-t
+  sort by modification time
+
+### file
+file picture.jpg
+
+### lesss
+Page Up or b: Scroll back one page
+Page Down or space: Scroll forward one page
+Home or G: Move to the end of the test file
+End or g: Move to the beginning of the text file
+/charaters: Search forward for the next occurrence of char- acters
+n: Search forward for the next occurrence of the previous search

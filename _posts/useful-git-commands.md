@@ -45,4 +45,24 @@ git fetch upstream
 (develop) git rebase master
           git rebase develop
 
+gitref
 
+Pro git
+
+remotes:
+  git pull == git fetch + git merge
+
+  git pull --rebase = git fetch + git rebase #{remote}/master
+
+  multiple remotes
+
+git log --oneline --graph --decorate
+
+git log branchA ^branchB
+
+git log master ^origin/master  (after fetch)
+
+##### my project
+git remote add bb git@bitbucket.org:gotomk/fair-one.git
+git push -u bb --all
+git push -u bb --tags
