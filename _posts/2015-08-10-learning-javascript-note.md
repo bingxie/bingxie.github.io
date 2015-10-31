@@ -337,7 +337,22 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
 
 ###Open Source Education
 
+a dollar sign
+isNumberic
 
+sizzle
+
+it's ok to return something from the function constructor (default is this)
+可以在返回之前对this做一些操作，然后用return明确得返回
+
+###Transpile:
+  Convert the syntax of one programming language, to another.
+
+TypeScript
+
+Traceur: ES6 -> ES5
+
+To read a list of features existing or coming in ES6, head here: https://github.com/lukehoban/es6features
 
 
 
