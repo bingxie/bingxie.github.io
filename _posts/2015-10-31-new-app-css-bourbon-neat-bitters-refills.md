@@ -3,6 +3,8 @@ layout: post
 title: Rails4新项目之CSS框架的选择：Bourbon
 ---
 
+![](/images/Bing_700.jpg "")
+
 我在之前的项目中使用过[Bootstrap](http://getbootstrap.com/)和[Foundation](http://foundation.zurb.com/)，确实非常方便使用，把相关的gem放到项目中之后，然后再到网站上找到一些HTML和CSS的例子，基本能够满足需求，但是要说到对这两个框架有多了解，还真是谈不上，这两个都是大而全的东西，在Rails中基本上都是一股脑全部引入，然后就只管用，确实省心。
 
 但是时间长了就发现，用这两个框架写出来的页面代码还是非常啰嗦，易读性和可维护性随着项目的变大越来越差。

@@ -3,6 +3,8 @@ layout: post
 title: Javascript学习笔记(持续更新中)
 ---
 
+![](/images/Bing_697.jpg "")
+
 ##Conceptual Aside
 ###Syntax Parsers
 A program that reads your code and determines what it does and if it's grammar is valid
