@@ -3,7 +3,7 @@ layout: post
 title: 快速选择Ruby Server：Puma和Unicorn
 ---
 
-![](/images/Bing_698.jpg "")
+![](/images/Bing_698.JPG "")
 
 > 一句话：如果是Rails4之后的新项目，我会选择Puma，如果是之前的老项目继续使用unicorn。
 

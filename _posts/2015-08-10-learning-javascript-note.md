@@ -3,7 +3,7 @@ layout: post
 title: Javascript学习笔记(持续更新中)
 ---
 
-![](/images/Bing_697.jpg "")
+![](/images/Bing_697.JPG "")
 
 ##Conceptual Aside
 ###Syntax Parsers
