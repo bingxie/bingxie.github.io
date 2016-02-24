@@ -1,4 +1,4 @@
-#### Remove a commit
+use#### Remove a commit
   撤销最新的一个commit,保留修改内容：git reset --soft HEAD^
 
   方法二：

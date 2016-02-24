@@ -1,0 +1,9 @@
+
+DelayedJob上手比较简单。
+
+Resque可能需要更多地内存
+
+Sidekiq需要购买更好地支持和功能
+
+由于有了ActvieJob这层的抽象，所以尽量使用ActiveJob的API进行使用。
+这样以后项目的规模变大后，可以更换实现比如resque或者sidekiq
