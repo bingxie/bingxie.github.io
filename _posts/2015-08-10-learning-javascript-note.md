@@ -6,67 +6,67 @@ title: Javascript学习笔记(持续更新中)
 ![](/images/Bing_697.JPG)
 
 ##Conceptual Aside
-###Syntax Parsers
+### Syntax Parsers
 A program that reads your code and determines what it does and if it's grammar is valid
 (interpreter/compiler) do extra stuff
 
-###Execution Contexts
+### Execution Contexts
 A wrapper to help manage the code that is running
 
-###Lexical Environments
+### Lexical Environments
 where something sits physically in the code you write
 (where you write something is important)
 
-###Name/Value Pairs
+### Name/Value Pairs
 A name which maps to a unique value
 
-###Object
+### Object
 A collection of name value pairs
 
-###The Global Environment And the Global Object
+### The Global Environment And the Global Object
 Global Object - like (window in browers)
 'this'
 
 Outer Environment
 Global -> 'Not inside a Function'
 
-###The execution context: creation and 'hoisting'
+### The execution context: creation and 'hoisting'
 Hoisting: Setup Memory Space for Variables and Functions
 
 All variable in javascript are initially set to undefined
 And functions are sitting in memory in their entirety.
 
-###Javascript and 'Undefined'
+### Javascript and 'Undefined'
 undefined: the variable hasn't been set, is javascript special value.
 
-###The execution context: Code Execution
+### The execution context: Code Execution
 
-###Single Threaded:
+### Single Threaded:
 one command at a time
 
-###Synchronous Execution:
+### Synchronous Execution:
 one at a time, in order
 
-###Function Invocation And The Execution Stack
+### Function Invocation And The Execution Stack
 invocation: running a function, using parenthesis ()
 execution context stack
 
-###Variable Environments:
+### Variable Environments:
 where the variables live:
 every execution context has its own variable environment
 how they relate to each other in memory
 
-###The Scope Chain:
+### The Scope Chain:
 Scope: where a variable is available in your code.
 
-###ES6
+### ES6
 let -> block scope
 
-###Asynchronous callbacks:
+### Asynchronous callbacks:
 
-##Types:
+## Types:
 
-###Primitive Types:
+### Primitive Types:
 primitive type: a single value 就是一个独立的值
 undefined 也是一个primitive type
 js的number是浮点数，只有这一种数字类型
@@ -74,67 +74,67 @@ symbol是ES6中的新的类型
 
 assignment is right to left:赋值操作的方向是从右往左
 
-###coercion: converting a value from one type to another.
+### coercion: converting a value from one type to another.
 + operator: coerce: number to string
 
 Number(false) = 0
 Number(undefined) = NaN
 Number(null) = 0
 
-###Equality ==:
+### Equality ==:
 "3" == 3   #true
 false == 0 #true
 
-###Strict Equality: ===  doesn't do coerce
+### Strict Equality: ===  doesn't do coerce
 绝大部分情况都是使用===进行比较，除非明确知道为什么要用==
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness
 
-###Boolean
+### Boolean
 Boolean(undefined) #false
 Boolean(null)      #false
 Boolean("")        #false
 Boolean(0) #false
 
-###Default value:
+### Default value:
 name = name || "Default name"
 
-##Objects and Functions
+## Objects and Functions
 person['firstname']
 person.firstname
 
 var person = new Object();
 
-###Object literal
+### Object literal
 var person = {};
 
-###Fanking Namespaces:  Using Object
+### Fanking Namespaces:  Using Object
 keep variables and functions with the same name separate
 
-###JSON:
+### JSON:
   JSON.stringfy(obj)
   JSON.parse("")
 
-###Functions are objects
+### Functions are objects
 JS的functions也是对象,有自己的name属性等。
 
-###First Class Functions:
+### First Class Functions:
 Everything you can do with other types you can do with functions
 Assign them to variables, pass them around, create them on the fly
 
 CODE 也是function对象的一个属性 （Invocable）
 
-###Expression:
+### Expression:
 A Unit of code that results in a value
 
-###By value VS by reference:
+### By value VS by reference:
 primitive value: copy the value (by value)
 all objects interact by reference
 
-###Objects, Functions, 'this'
+### Objects, Functions, 'this'
 var self = this
 
-###arguments and Spread:
+### arguments and Spread:
 arguments: the parameters you pass to a function
 arguments.length
 arguments[0]
@@ -146,14 +146,14 @@ function getPerson(){
     };
 }
 
-###Immediatiely Invoked function expressions
+### Immediatiely Invoked function expressions
 
 (function(name){
   retrun 'hello';
 })();
 () 里面就可以放入statement，所以可以放入function的statement
 
-###Closure:
+### Closure:
 小心循环的陷阱
 {% highlight javascript %}
 function buildFunctions(){
@@ -196,12 +196,12 @@ fs[1]();
 fs[2]();
 {% endhighlight %}
 
-###Function Factories
+### Function Factories
 
-###Closures And Callbacks
+### Closures And Callbacks
 callback function: A function you give to another function to be run when the other function is finished.
 
-###Call(), Apply(), Bind()
+### Call(), Apply(), Bind()
 bind(obj): 返回一个copy的function，然后把function中的this赋值为obj
 
 call(obj, '',...):会设置this为obj然后执行这个function
@@ -216,11 +216,11 @@ function currying
   Creating a copy of a function but with some preset parameters
   very useful in mathematical situations
 
-###Functional Programming
+### Functional Programming
   underscore.js -> source code # TODO
   lodash.com
 
-##Object-Orientied Javascript and prototypal inheritance
+## Object-Orientied Javascript and prototypal inheritance
 
 每个obj都有一个proto属性，指向其prototype
 
@@ -231,11 +231,11 @@ john.__proto__
 
 Everything is an object (or a primitive)
 
-###base object : Object
+### base object : Object
 
 function的prototype -> function Empty(){}  #apply(), bind(), call()
 
-###Reflection and Extend
+### Reflection and Extend
   An object can look at itself, listing and changing its properties and methods.
 {% highlight javascript %}
   for(var prop in john){
@@ -249,7 +249,7 @@ function的prototype -> function Empty(){}  #apply(), bind(), call()
     to combine and compose other objects
 {% endhighlight %}
 
-##function Person(){} # function constructor
+## function Person(){} # function constructor
 A normal function that is used to construct objects.
 
 The 'this' variable points a new empty object, and that object is returned form the function automatically.
@@ -257,7 +257,7 @@ The 'this' variable points a new empty object, and that object is returned form 
 Function的prototype属性只有是使用new的情况下次才会用到。
 
 
-###Built-in function constructors
+### Built-in function constructors
 {% highlight javascript %}
 var a = new Number(3);
 a.toFixed(2);
@@ -277,7 +277,7 @@ for(var prop in arr){
 }
 {% endhighlight %}
 
-###Object.create and Pure Prototypal Inheritance
+### Object.create and Pure Prototypal Inheritance
 {% highlight javascript %}
 var person = {
   firstname: 'Default',
@@ -294,7 +294,7 @@ console.log(john);
 
 {% endhighlight %}
 
-###Polyfill
+### Polyfill
 Code that adds a feature which the engine may lack
 {% highlight javascript %}
 if (!Object.create) {
@@ -309,14 +309,14 @@ if (!Object.create) {
 }
 {% endhighlight %}
 
-###ES6 and CLASSES
+### ES6 and CLASSES
 extends
 
 classes in javascript a phrase that it's just syntactic sugar
 
-##ODDS and ENDS
+## ODDS and ENDS
 
-###typeof, instanceof
+### typeof, instanceof
 typeof 3 #number
 typeof 'hello' #string
 typeof {} #object
@@ -327,7 +327,7 @@ instanceof #检查prototype chain
 
 typeof (function{})  #function
 
-###Strict mode
+### Strict mode
 "use strict";
 
 function myfunc(){
@@ -337,7 +337,7 @@ function myfunc(){
 }
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
 
-###Open Source Education
+### Open Source Education
 
 a dollar sign
 isNumberic
@@ -347,7 +347,7 @@ sizzle
 it's ok to return something from the function constructor (default is this)
 可以在返回之前对this做一些操作，然后用return明确得返回
 
-###Transpile:
+### Transpile:
   Convert the syntax of one programming language, to another.
 
 TypeScript

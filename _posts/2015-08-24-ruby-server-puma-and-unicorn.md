@@ -7,7 +7,7 @@ title: 快速选择Ruby Server：Puma和Unicorn
 
 > 一句话：如果是Rails4之后的新项目，我会选择Puma，如果是之前的老项目继续使用unicorn。
 
-###使用Puma最主要有两个优点：
+### 使用Puma最主要有两个优点：
 
 * Puma支持多线程，可以提升并发。
 * Puma 省内存。 Unicorn 一个进程 120M - 140M，Puma 一个进程 80M-120M。
@@ -21,7 +21,7 @@ title: 快速选择Ruby Server：Puma和Unicorn
 [How To Set Up Zero Downtime Rails Deploys Using Puma and Foreman](https://www.digitalocean.com/community/tutorials/how-to-set-up-zero-downtime-rails-deploys-using-puma-and-foreman)
 
 
-###更多有用资料：
+### 更多有用资料：
 
 [Scaling Ruby Apps to 1000 Requests per Minute - A Beginner's Guide](http://www.nateberkopec.com/2015/07/29/scaling-ruby-apps-to-1000-rpm.html)
 

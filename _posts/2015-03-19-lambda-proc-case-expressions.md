@@ -29,7 +29,7 @@ is_even = ->(n) { n.even? }
 
 is_even === 5 # => false
 
-# same as
+#same as
 is_even.call(5)
 {% endhighlight %}
 

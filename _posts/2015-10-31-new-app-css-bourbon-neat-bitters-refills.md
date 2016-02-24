@@ -52,15 +52,15 @@ title: Rails4新项目之CSS框架的选择：Bourbon
 
 接下来简单说一下我是如何在新的Rails项目中使用的。
 
-####1. 基本安装:
+#### 1. 基本安装:
 这里没有什么特别需要说明的，大家只要按照官方github上的文档说明，很容易搞定。
 
-####2. 使用normalize.css
+#### 2. 使用normalize.css
 在Bootstrap中默认是集成了`normalize.css`，所以我们不用单独引入，在Bourbon栈中默认是没有的，需要我们单独引用.这里使用normalize-rails这个gem就可以了。
 
 > gem "normalize-rails"
 
-####3. 使用`autoprefixer`
+#### 3. 使用`autoprefixer`
 Bourbon中有一大块功能是关于`vendor prefixes`的。需要开发者自己主动地去使用封装好的一些Sass的mixin，这个对于我一个后端出身的号称全栈的开发者要求有些高了。
 同时autoprefixer的处理方式就是非常的傻瓜式，开发者自己不要管vendor prefixes，尽管写标准的CSS，剩下的autoprefixer自动搞定。
 Bourbon的开发者也同意这一点，所以在`Bourbon5.0`中，关于vendor prefixes的部分也将会删除。

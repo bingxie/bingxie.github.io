@@ -13,7 +13,7 @@ minitest是Rails4后默认支持的测试框架，另外rails也提供了很多�
 
 下面我就总结和分享一下，Rails4新项目中minitest和capybara的集成和配置：
 
-##Gemfile
+## Gemfile
 
 {% highlight ruby %}
 group :test do
@@ -34,7 +34,7 @@ end
 * `mocha` 是一个方便进行mock和stub的工具
 * 其他几个都是跟capybara相关的工具，具体会在配置中看到。
 
-##test_helper中添加的配置内容
+## test_helper中添加的配置内容
 
 {% highlight ruby %}
 require "mocha/mini_test"
@@ -74,7 +74,7 @@ end
 ActiveRecord::Base.shared_connection = ActiveRecord::Base.connection
 {% endhighlight %}
 
-##测试确认邮件
+## 测试确认邮件
 
 如果要测试邮件的内容，内容中一般都会有链接，所以需要在config/environments/test.rb中加上：
 {% highlight ruby %}
@@ -87,7 +87,7 @@ Delayed::Worker.delay_jobs = !Rails.env.test?
 {% endhighlight %}
 表明测试环境下，邮件任务都是直接发送出去的
 
-##用户注册和确认邮件测试的样例代码
+## 用户注册和确认邮件测试的样例代码
 
 在test目录下面，新建features目录，专门存放网站功能测试代码
 `test/features/user_authentication_test.rb`
