@@ -2,7 +2,7 @@
 layout: post
 title: 互联网女皇2015互联网趋势报告笔记
 ---
-![](/images/Bing_628.JPG "")
+![](/images/Bing_628.JPG)
 
 读了这篇[前Facebook工程师深度解读互联网女皇2015互联网趋势报告](http://wwww.huxiu.com/article/118440/1.html)对互联网女皇的报告的解析做的摘录和总结，主要是一些觉得对自己比较重要的，以后回头看看给自己提个醒。
 

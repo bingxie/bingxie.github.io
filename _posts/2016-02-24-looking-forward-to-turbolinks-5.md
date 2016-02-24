@@ -3,7 +3,7 @@ layout: post
 title: Looking forward to Turbolinks 5
 ---
 
-![](/images/Bing_704.JPG "")
+![](/images/Bing_704.JPG)
 
 As a practical rails developer, we all want to keep up to date with new Rails direction and status. With coming Rails5 we will have Turbolinks 5 and Rails API.
 

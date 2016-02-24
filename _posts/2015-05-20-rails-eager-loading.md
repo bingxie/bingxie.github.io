@@ -2,7 +2,7 @@
 layout: post
 title: 搞清楚Rails中的eager loading
 ---
-![](/images/bing_623.jpg "")
+![](/images/bing_623.JPG)
 
 在Rails中eager loading这词比较抽象，其实就是preloading的意思。就是尽可能把后面需要的数据，通过最少的sql语句一起查询出来，从数据库的角度就是充分利用Join的功能，解决N+1查询的问题。
 

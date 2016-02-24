@@ -3,7 +3,7 @@ layout: post
 title: Rails4新项目的测试：minitest + capybara测试基于devise的用户注册
 ---
 
-![](/images/Bing_702.JPG "")
+![](/images/Bing_702.JPG)
 
 > 没有测试就会让写程序的开发者没有自信
 

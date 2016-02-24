@@ -3,7 +3,7 @@ layout: post
 title: Rails4新项目的选择2：前端框架，Simple_form, 后台任务，搜索和用户认证
 ---
 
-![](/images/Bing_701.JPG "")
+![](/images/Bing_701.JPG)
 
 Rails的世界各种开源的优秀解决方案非常多，项目开始的时候比较痛苦地就是要根据自己的原则和项目的特点来做出正确的选择。
 

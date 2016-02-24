@@ -3,7 +3,7 @@ layout: post
 title: 本周总结13-18-07-2015
 ---
 
-![](/images/Bing_696.JPG "")
+![](/images/Bing_696.JPG)
 
 ###部署
 本周发现产品环境发布后，自动重启unicorn失败，发现是在老的版本的目录下执行的`bundle exec unicorn`命令。
