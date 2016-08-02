@@ -36,6 +36,8 @@ end
 
 ## test_helper中添加的配置内容
 
+在这里创建一个继承自新ActionDispatch::IntegrationTest的FeatureTest类，然后引入Capybara::DSL，作为Feature测试的父类。
+
 {% highlight ruby %}
 require "mocha/mini_test"
 
@@ -48,7 +50,7 @@ require "capybara/poltergeist"
 
 Capybara.javascript_driver = :poltergeist
 
-class ActionDispatch::IntegrationTest
+class FeatureTest < ActionDispatch::IntegrationTest
   # 可以在功能测试中使用capybara的DSL
   include Capybara::DSL
 
@@ -95,7 +97,7 @@ Delayed::Worker.delay_jobs = !Rails.env.test?
 {% highlight ruby %}
 require 'test_helper'
 
-class UserAuthenticationTest < ActionDispatch::IntegrationTest
+class UserAuthenticationTest < FeatureTest
   setup do
     ActionMailer::Base.deliveries.clear
   end
