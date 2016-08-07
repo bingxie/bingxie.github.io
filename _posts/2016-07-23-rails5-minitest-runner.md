@@ -3,7 +3,7 @@ layout: post
 title: Rails5为Minitest提供了更好用的Runner
 ---
 
-![](/images/Bing_702.JPG)
+![](/images/Bing_705.JPG)
 
 之前有写过一篇在Rails4项目中使用minitest进行测试的文章: [minitest + capybara测试基于devise的用户注册](http://www.bigbing.net/2015/11/23/rails4-minitest-capybara-devise/)
 
