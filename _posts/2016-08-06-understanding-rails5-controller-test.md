@@ -33,35 +33,38 @@ title: 理解Rails5中Controller和Integration测试
 
 在Rails4中，通过action的名字来发送请求（说实话我一直很不习惯）
 
-	class PicturesControllerTest < ActionController::TestCase
-
-	  def test_index_response
-	    get :index
-	    assert_response :success
-	  end
-	end
+{% highlight ruby %}
+class PicturesControllerTest < ActionController::TestCase
+  def test_index_response
+    get :index
+    assert_response :success
+  end
+end
+{% endhighlight %}
 
 而在Rails5中，要换成URL（多直观），否则就会抛出异常：`URI::InvalidURIError: bad URI`
 
-	class PicturesControllerTest < ActionDispatch::IntegrationTest
-
-	  def test_index
-	    get pictures_url
-	    assert_response :success
-	  end
-	end
+{% highlight ruby %}
+class PicturesControllerTest < ActionDispatch::IntegrationTest
+  def test_index
+    get pictures_url
+    assert_response :success
+  end
+end
+{% endhighlight %}
 
 ### 5. HTTP的请求方法中必须使用关键字参数
 
 在Rails5中，HTTP请求的方法参数必须明确指定关键字，比如params，flash等。这样会让代码更加清楚。请看例子：
 
-	class PicturesControllerTest < ActionDispatch::IntegrationTest
-
-	  def test_create
-	    post picture_url, params: { picture: { name: "sea" } }
-	    assert_response :success
-	  end
-	end
+{% highlight ruby %}
+class PicturesControllerTest < ActionDispatch::IntegrationTest
+  def test_create
+    post picture_url, params: { picture: { name: "sea" } }
+    assert_response :success
+  end
+end
+{% endhighlight %}
 
 ## 第二部分：理解ActionDispatch::IntegrationTest类和相关module
 
