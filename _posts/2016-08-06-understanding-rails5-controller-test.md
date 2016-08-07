@@ -80,7 +80,7 @@ title: 理解Rails5中Controller和Integration测试
 
 所以，为了搞清楚这些helper方法和assertions的来源，也方便我们日后查询相关的文档，我会通过下面的类图来理解IntegrationTest这个类。
 
-![](/images/integration_test2.png)
+![](/images/integration_test2.jpg)
 
 
 ### 1. ActiveSupport::TestCase
