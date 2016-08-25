@@ -131,4 +131,58 @@ end
 
 所以，理解了`IntegrationTest`的结构后，我们就知道为什么我们还需要引入`ActionDispatch::TestProcess`来测试文件上传，详细的如何测试Carrierwave的文件上传功能我会在下一篇文章中介绍。
 
+----
+
+补充，本文发到[rubychina](http://rubychina.org)论坛后，有朋友问如何测试`ApplicationController`中的Filter,比如常见的`Devise`的`:authenticate_user!`
+
+{% highlight ruby %}
+class ApplicationController < ActionController::Base
+  protect_from_forgery with: :exception
+
+  before_action :authenticate_user!
+end
+{% endhighlight %}
+
+然后创建一个`/test/controllers/base_controller_test.rb`
+
+{% highlight ruby %}
+require 'test_helper'
+
+class BaseController < ApplicationController
+  def index
+    head :ok
+  end
+end
+
+class BaseControllerTest  < ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers
+
+  setup do
+    Rails.application.routes.draw do
+      get 'base' => 'base#index'
+    end
+  end
+
+  teardown do
+    Rails.application.reload_routes!
+  end
+
+  test 'redirects if user is not logedin' do
+    get '/base'
+
+    assert_response :redirect
+    assert_redirected_to 'http://www.example.com/'
+  end
+
+  test 'returns success if user is loggedin' do
+    sign_in users(:one)
+
+    get '/base'
+    assert_response :success
+  end
+end
+{% endhighlight %}
+
+可以看到使用minitest，代码更加直观，没有太多的magic，直接定义一个临时的controller来测试验证登录的filter.
+
 
