@@ -11,7 +11,7 @@ title:               BigBing
 tagline:             '技术博客'
 description:         '这是一个别名叫大兵的技术人的博客，主要关注Web开发，部署相关的技术。'
 url:                 http://www.bigbing.net
-baseurl:             /
+baseurl:             ''
 paginate:            5
 
 # About/contact
