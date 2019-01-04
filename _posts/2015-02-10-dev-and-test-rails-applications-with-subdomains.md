@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 使用subdomain开发和测试rails应用(一)
+categories: [Tech]
+tags: [rails, subdomain]
 ---
 
 这篇博客总结和展示在开发和测试rails应用的时候如何使用子域名subdomains

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 我的家庭工作站
+categories: [Tech]
+tags: [workstation]
 ---
 
 最近由于很多时间是在家里工作的，所以就需要把家里的工作环境和设施弄得舒服，实用一些。
@@ -23,4 +25,3 @@ title: 我的家庭工作站
 * NSO Power Ball (神奇健身球)
 * 微软的无线键盘鼠标
 * 黑色的Mug （简直太配了！）
-

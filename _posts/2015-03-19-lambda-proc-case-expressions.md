@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 在Ruby的Case表达式中使用Lambda/Proc
+categories: [Tech]
+tags: [ruby, lambda]
 ---
 
 大部分的Ruby开发者都知道在`case`表达式中的`when`后面可以使用直接量，类，范围(Range)和正则表达式：

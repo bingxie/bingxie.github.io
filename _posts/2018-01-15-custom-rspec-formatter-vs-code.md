@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 为 VS Code定制 Rspec 的 formatter
-categories: [tech]
+categories: [Tech]
 tags: [vscode, rspec]
 ---
 

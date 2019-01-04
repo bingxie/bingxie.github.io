@@ -1,6 +1,8 @@
 ---
 layout: post
 title: HTML5 Boilerplate
+categories: [Tech]
+tags: [html5]
 ---
 
 [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate)是一个非常流行的，用于快速构建健壮的web应用和站点的前端模板。

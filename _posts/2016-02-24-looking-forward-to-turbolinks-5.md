@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Looking forward to Turbolinks 5
+categories: [Tech]
+tags: [rails5, turbolinks]
 ---
 
 ![](/images/Bing_704.JPG)

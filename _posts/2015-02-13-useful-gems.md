@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 常用Ruby Gems列表（持续更新）
+categories: [Tech]
+tags: [ruby, gems]
 ---
 
 ### 性能优化

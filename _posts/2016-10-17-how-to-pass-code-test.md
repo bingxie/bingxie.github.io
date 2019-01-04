@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 顺利通过Code Test的Checklist
+categories: [Tech]
+tags: [code-test, checklist]
 ---
 
 ![](/images/Bing_709.JPG)
@@ -52,4 +54,3 @@ Code Test通过后，才会进入面对面的面试，这其中还会有`Pair Pr
 * 方法尽可能短小，不要超过5行
 
 最后祝所有找工作的朋友好运！
-

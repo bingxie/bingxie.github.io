@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Rails4新项目之CSS框架的选择：Bourbon
+categories: [Tech]
+tags: [css, bourbon]
 ---
 
 ![](/images/Bing_700.JPG)
@@ -74,4 +76,3 @@ Bourbon的开发者也同意这一点，所以在`Bourbon5.0`中，关于vendor 
 [Awesome CSS with Bourbon, Neat, Bitters & Refills!](https://www.youtube.com/playlist?list=PLfdtiltiRHWErI0VSxDCbeDyEJm_kVt3p) 国内的朋友记得翻墙哦。
 
 BTW：随着项目的进行，我会逐步写出对于一些架构和工具选择总结的文章。
-

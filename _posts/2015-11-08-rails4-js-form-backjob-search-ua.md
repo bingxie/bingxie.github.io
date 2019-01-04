@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Rails4新项目的选择2：前端框架，Simple_form, 后台任务，搜索和用户认证
+categories: [Tech]
+tags: [rails4, simple-form]
 ---
 
 ![](/images/Bing_701.JPG)

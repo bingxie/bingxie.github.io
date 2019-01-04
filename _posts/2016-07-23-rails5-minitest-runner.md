@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Rails5为Minitest提供了更好用的Runner
+categories: [Tech]
+tags: [rails5, minitest]
 ---
 
 ![](/images/Bing_705.JPG)
@@ -37,5 +39,3 @@ title: Rails5为Minitest提供了更好用的Runner
 
 	"run_ruby_unit_command": "rails test {relative_path}",
     "run_single_ruby_unit_command": "rails test {relative_path}:{line_number}",
-
-

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 学习使用cucumber和相关技巧
+categories: [Tech]
+tags: [rspec, cucumber]
 ---
 ### 参考资料
 这次系统得学习一下cucumber，首先还是通过几个railscasts上的视频进行学习，虽然里面使用的是rails2，我还是用rails3及相关的gem重新实现了一遍。
@@ -94,7 +96,3 @@ module NavigationHelpers
   end
 end
 {% endhighlight %}
-
-
-
-

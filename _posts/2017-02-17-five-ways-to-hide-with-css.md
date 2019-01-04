@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 用CSS隐藏元素的五种方法
+categories: [Tech]
+tags: [css]
 ---
 
 ![](/images/Bing_710.JPG)
@@ -10,7 +12,7 @@ title: 用CSS隐藏元素的五种方法
 
     .hide {
       opacity: 0;
-    }      
+    }
 
 相当于设置元素为透明
 屏幕阅读器可读, 可以继续交互
@@ -19,7 +21,7 @@ title: 用CSS隐藏元素的五种方法
 
     .hide {
       visibility: hidden;
-    }      
+    }
 
 屏幕阅读器不可读.
 
@@ -69,4 +71,3 @@ title: 用CSS隐藏元素的五种方法
 | display: none | no | no | no | no | yes |
 | move out the viewport | no | yes | yes | yes | yes |
 | clip-path | yes | no |yes| yes | no |
-

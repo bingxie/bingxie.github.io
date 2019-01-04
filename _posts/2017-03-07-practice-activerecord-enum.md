@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ActiveRecord Enum实战总结
+categories: [Tech]
+tags: [rails, active-record, enum]
 ---
 
 ![](/images/Bing_711.JPG)
@@ -102,4 +104,3 @@ Rails4.1 及之后的版本中，由于 `enum` 会自动产生一些方法，所
 > PG::NotNullViolation: ERROR: column "size" contains null values
 
 这时可以先`add_column`添加字段，不要加 NOT NULL 的限制，然后更新已有数据，然后再通过`change_column_null`来添加 `NOT NULL` 限制。
-

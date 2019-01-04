@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 慈，俭，不敢为天下先
+categories: [Life]
+tags: [laozi]
 ---
 
 引自[罗辑思维 第121期 丰满理想下的残酷杀戮](https://www.youtube.com/watch?v=SUrj9lvn1rU)
@@ -21,4 +23,3 @@ title: 慈，俭，不敢为天下先
 二、对任何一种新东西，抱有一种小心翼翼试试的心态
 
 三、对任何东西都不要亢奋，不管说的有多好，都不值得亢奋得全身扑上
-

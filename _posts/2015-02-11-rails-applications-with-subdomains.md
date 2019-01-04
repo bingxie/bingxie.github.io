@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 使用subdomain开发和测试rails应用(二)
+categories: [Tech]
+tags: [rails, subdomain]
 ---
 
 基于上一篇blog[使用subdomain开发和测试rails应用(一)](http://localhost:4000/2015/02/10/dev-and-test-rails-applications-with-subdomains/)，已经知道如何在开发和测试环境中配置和使用subdomain。这篇blog主要结合实例代码，介绍如何在rails应用内处理subdomain。
@@ -86,4 +88,3 @@ config.action_controller.default_url_options = { subdomain: false }
 resources :photos, :constraints => {:id => /[A-Z][A-Z][0-9]+/}
 
 (完)
-

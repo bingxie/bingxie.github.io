@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 使用Jekyll和GitHub Pages构建个人博客
+categories: [Tech]
+tags: [jekyll, github-pages]
 ---
 
 这篇Blog主要就是介绍我是如何使用Jekyll和GitHub pages快速得搭建了我的这个个人博客。

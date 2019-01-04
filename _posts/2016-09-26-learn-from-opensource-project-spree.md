@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 通过Spree开源代码学Ruby和Rails知识
+categories: [Tech]
+tags: [ruby, spree]
 ---
 
 ![](/images/Bing_708.JPG)
@@ -106,17 +108,3 @@ end
 MethodTest.root_path = '/root'
 to_prepare &MethodTest.method(:activate).to_proc
 {% endhighlight %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-

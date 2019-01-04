@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 理解Rails5中Controller和Integration测试
+categories: [Tech]
+tags: [rails5, test]
 ---
 
 ![](/images/Bing_706.JPG)
@@ -184,5 +186,3 @@ end
 {% endhighlight %}
 
 可以看到使用minitest，代码更加直观，没有太多的magic，直接定义一个临时的controller来测试验证登录的filter.
-
-

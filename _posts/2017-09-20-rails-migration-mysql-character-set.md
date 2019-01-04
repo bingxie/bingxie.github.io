@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 使用 Rails Migration转换 MySQL数据库和表的字符集总结
+categories: [Tech]
+tags: [rails, mysql]
 ---
 
 ![](/images/Bing_712.JPG)

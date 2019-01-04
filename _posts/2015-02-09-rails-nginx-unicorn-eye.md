@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 产品环境 Nginx + Unicorn + Eye 的 Rails 应用配置
+categories: [Tech]
+tags: [nginx, rails]
 ---
 
 最近整理了一下个人项目产品环境的配置，加了一些注释，分享出来希望对大家有用。

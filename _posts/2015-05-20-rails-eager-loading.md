@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 搞清楚Rails中的eager loading
+categories: [Tech]
+tags: [rails]
 ---
 ![](/images/bing_623.JPG)
 

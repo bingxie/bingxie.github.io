@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Javascript学习笔记(持续更新中)
+categories: [Tech]
+tags: [javascript]
 ---
 
 ![](/images/Bing_697.JPG)
@@ -355,18 +357,3 @@ TypeScript
 Traceur: ES6 -> ES5
 
 To read a list of features existing or coming in ES6, head here: https://github.com/lukehoban/es6features
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

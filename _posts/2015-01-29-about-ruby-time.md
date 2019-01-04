@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 关于Ruby的时间
+categories: [Tech]
+tags: [ruby]
 ---
 
 ### TODO：主要内容
@@ -74,10 +76,10 @@ end
 display times in a specific user’s time zone, we can use Time’s `in_time_zone` method:
 
 ## Working with APIs
-When working with APIs, it is best to use the ISO8601 standard, which represents date/time information as a string. ISO8601’s advantages are that the string is unambiguous, human readable, widely supported, and sortable. 
+When working with APIs, it is best to use the ISO8601 standard, which represents date/time information as a string. ISO8601’s advantages are that the string is unambiguous, human readable, widely supported, and sortable.
 
 ```
-> timestamp = Time.now.utc.iso8601 
+> timestamp = Time.now.utc.iso8601
 => "2015-07-04T21:53:23Z"
 ```
 
@@ -200,6 +202,3 @@ Zonebie.set_random_timezone
 
 ## 参考
 https://robots.thoughtbot.com/its-about-time-zones
-
-
-

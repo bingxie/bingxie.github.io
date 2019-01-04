@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 快速选择Ruby Server：Puma和Unicorn
+categories: [Tech]
+tags: [puma, unicorn]
 ---
 
 ![](/images/Bing_698.JPG)

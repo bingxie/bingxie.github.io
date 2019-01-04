@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Add new font for ImageMagick on Mac OS X and Ubuntu
+categories: [Tech]
+tags: [imagemagick, font]
 ---
 
 ![](/images/Bing_707.JPG)
@@ -22,11 +24,11 @@ Actually, on Ubuntu, there is already a package to intall. It's very straightfor
 	sudo apt-get install fonts-lato
 
 ### 2. Find the font name to use
-	
+
 Find the available font list with:
-	
+
 	mogrify -list font | grep Lato
-	
+
 	#output
 	Font: Lato-Medium
 	  family: Lato
@@ -52,22 +54,22 @@ Make a new directory for ImageMagick local settings and cd into it
 
 	mkdir ~/.magick
 	cd ~/.magick
-	
+
 Grab the script to find all fonts and store them in a config file
 
 	curl http://www.imagemagick.org/Usage/scripts/imagick_type_gen > type_gen
-	
+
 	find /Library/Fonts -name *.ttf -o -name *.otf | perl type_gen -f - > type.xml
-	
+
 Go to ImageMagick config folder
 
 	cd /usr/local/Cellar/imagemagick/6.9.3-7/etc/ImageMagick-6
-	
+
 Edit system config file called `type.xml` and add line near end to tell ImageMagick to look at local file we made in earlier step
 
 	<typemap>
 	  <include file="type-ghostscript.xml" />
-	  <include file="~/.magick/type.xml" />  ### THIS LINE ADDED ### 
+	  <include file="~/.magick/type.xml" />  ### THIS LINE ADDED ###
 	</typemap>
 
 ### 3. Find the font name to use
@@ -75,7 +77,7 @@ Edit system config file called `type.xml` and add line near end to tell ImageMag
 Find the available font list with:
 
 	mogrify -list font | grep Lato
-	
+
 	### output
 	Font: LatoM
      family: Lato Medium
@@ -83,5 +85,5 @@ Find the available font list with:
 	Font: Lato
      family: Lato
      glyphs: /Library/Fonts/Lato-Regular.ttf
-     
+
 Because the script generated the name is not as same as it is on Ubuntu Server. So we can manually edit the `~/.magick/type.xml` file and change the name, then in the code we use the same font name.

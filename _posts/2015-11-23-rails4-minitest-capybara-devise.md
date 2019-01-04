@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Rails4新项目的测试：minitest + capybara测试基于devise的用户注册
+categories: [Tech]
+tags: [rails4, minitest, capybara]
 ---
 
 ![](/images/Bing_702.JPG)
