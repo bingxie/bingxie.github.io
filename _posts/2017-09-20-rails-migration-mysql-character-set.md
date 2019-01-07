@@ -61,7 +61,7 @@ ALTER DATABASE db_name CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 
 或者单独修改
 
-```
+```sql
 ALTER DATABASE my_database DEFAULT COLLATE utf8_unicode_ci;
 
 ALTER DATABASE my_database DEFAULT CHARACTER SET utf8;
@@ -167,5 +167,6 @@ end
 
 在 Rails Console 或者 Runner 中执行 SQL语句，可以使用 `ActiveRecord::Migration.execute("SQL")`
 
+---
 参考文章：
   [How to change all columns' and tables' collation to 'utf8_bin' in MySQL](https://confluence.atlassian.com/jirakb/how-to-change-all-columns-and-tables-collation-to-utf8_bin-in-mysql-601456761.html)
