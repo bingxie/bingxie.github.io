@@ -48,7 +48,7 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "PT Sans", Helvetica, Arial,
+  font-family: "Helvetica Neue", Helvetica, Arial,
                "\5FAE\8F6F\96C5\9ED1", "微软雅黑",
                STXihei, "华文细黑",
                sans-serif;
@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 56em) {
   .container {
-    max-width: 52rem;
+    max-width: 54rem;
   }
 }
 

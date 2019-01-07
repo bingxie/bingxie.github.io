@@ -163,7 +163,7 @@ end
 
 `ActiveRecord::Base.connection.current_database` 获取当前连接的数据库
 
- `ActiveRecord::Migrator.current_version`  查看当前的版本
+`ActiveRecord::Migrator.current_version`  查看当前的版本
 
 在 Rails Console 或者 Runner 中执行 SQL语句，可以使用 `ActiveRecord::Migration.execute("SQL")`
 
