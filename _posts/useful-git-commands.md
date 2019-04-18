@@ -1,4 +1,4 @@
-use#### Remove a commit
+### Remove a commit
   撤销最新的一个commit,保留修改内容：git reset --soft HEAD^
 
   方法二：
@@ -17,7 +17,7 @@ squash the commits into one using git rebase
 git rebase -i origin/master
 
 
-force the push by adding a + before the branch name
+Force the push by adding a + before the branch name
 $ git push origin +my-new-feature
 
 Delete the branch remotely
