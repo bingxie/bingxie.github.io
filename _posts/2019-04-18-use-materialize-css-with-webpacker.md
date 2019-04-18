@@ -25,7 +25,7 @@ $ touch app/javascript/stylesheets/application.scss
 然后我们需要`import`刚才创建的`scss`文件，让`Webpacker`帮我们编译`scss`文件
 
 ```javascript
-# app/javascript/packs/application.js
+// app/javascript/packs/application.js
 
 import '../stylesheets/application'
 ```
@@ -49,14 +49,14 @@ yarn add materialize-css
 下面我们要把`materialize.js`加入到`application.js`中
 
 ```javascript
-# app/javascript/packs/application.js
+// app/javascript/packs/application.js
 
 import 'materialize-css/dist/js/materialize'
 ```
 然后到`application.scss`中引入`materialize.css`
 
 ```scss
-# app/javascript/stylesheets/application.scss
+// app/javascript/stylesheets/application.scss
 
 @import ‘materialize-css/dist/css/materialize’;
 ```
@@ -64,7 +64,7 @@ import 'materialize-css/dist/js/materialize'
 最后我们还需要在`application.html.erb`中加入`Materialize`依赖的字体和图标
 
 ```html
-# app/views/layouts/application.html.erb
+// app/views/layouts/application.html.erb
 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 ```
