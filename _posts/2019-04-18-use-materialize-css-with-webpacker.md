@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 使用Wepacker安装和使用Materialize CSS
+title: Rails5.2用Wepacker安装和使用Materialize CSS
 categories: [Tech]
 tags: [rails, webpacker, materialize css]
 ---
