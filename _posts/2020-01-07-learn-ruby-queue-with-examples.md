@@ -15,18 +15,18 @@ If we see the last index as the head of the `Queue`, we can use `#unshift` to en
 
 ```ruby
 queue = Array.new # or []
-queue.unshift 'dog'
-queue.unshift 'cat'
-queue.unshift 'cow'
+queue.unshift "dog"
+queue.unshift "cat"
+queue.unshift "cow"
 
-# queue is: ['cow', 'cat', 'dog']
+# queue is: ["cow", "cat", "dog"]
 
-queue.last  # peek returns 'dog'
+queue.last  # peek returns "dog"
 
-queue.pop # 'dog'
-queue.pop # 'cat'
+queue.pop # "dog"
+queue.pop # "cat"
 
-# queue is: ['cow']
+# queue is: ["cow"]
 ```
 
 We could see the index 0 as the head of the queue. Then we will use `#push` as enqueue method, `#shift` as dequeue method, and `#first` as the peek method.
