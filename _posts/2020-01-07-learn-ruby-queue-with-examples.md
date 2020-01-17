@@ -33,24 +33,24 @@ We could see the index 0 as the head of the queue. Then we will use `#push` as e
 
 ```ruby
 queue = Array.new # or []
-queue.push 'dog' # or <<
-queue.push 'cat'
-queue.push 'cow'
+queue.push "dog" # or <<
+queue.push "cat"
+queue.push "cow"
 
-# queue is: ['dog', 'cat', 'cow']
+# queue is: ["dog", "cat", "cow"]
 
-queue.first  # peek returns 'dog'
+queue.first  # peek returns "dog"
 
-queue.shift # 'dog'
-queue.shift # 'cat'
+queue.shift # "dog"
+queue.shift # "cat"
 
-# queue is: ['cow']
+# queue is: ["cow"]
 ```
 There are another two methods `#size` and `#empty?` used a lot for a queue.
 For example when we want to loop through the queue
 
 ```ruby
-while !queue.empty?  # or queue.size > 0
+while !queue.empty? do # or queue.size > 0
   item = queue.pop
   # do thing with item
 end
@@ -59,7 +59,9 @@ end
 Ruby Queue class is a `thread-safe`, `blocking` queue implementation. And we can use it in a `multi-threaded` program.
 
 We can use `#push`, `#enq` and `#<<` methods to enqueue.
+
 And use `#pop`, `#deq` and `#shift` methods to dequeue.
+
 Those methods are more intuitive than methods in `Array`
 
 The blocking feature is decided by `non_block` argument in `#pop` method, the default value for `non_block` is false, so when the queue is empty, the calling thread is suspended until data is pushed onto the queue.
@@ -74,15 +76,15 @@ I will create another post to demonstrate how to use `Queue` in a coding intervi
 ```ruby
 sized_queue = SizedQueue.new(3)  # the maximum size is 5
 
-sized_queue.push('a')
-sized_queue.push('b')
-sized_queue.push('c')
+sized_queue.push("a")
+sized_queue.push("b")
+sized_queue.push("c")
 
-sized_queue.push('d')  # This one is blocked.
+sized_queue.push("d")  # This one is blocked.
 ```
 `#push` method can accept another argument `non_block`, the default value is `false`, if `non_block` is true, the thread isn't suspended, and `ThreadError` is raised.
 
 ### Last Thing
-There is one disadvantage for using `Queue` and `SizedQueue` classes, they both don't have the `#peek` method to let you peek the head element of the queue.
+There is one disadvantage of using `Queue` and `SizedQueue` classes, they both don't have the `#peek` method to let you peek the head element of the queue.
 
 I will show you how to implement a `thread-safe` `Queue` using `Array` in another Ruby Rate Limiter post.
