@@ -4,7 +4,7 @@ title: Learn Ruby Queue with Examples
 categories: [Tech]
 tags: [ruby, queue, rate limiter]
 ---
-In Ruby Language, if we want to use a **FIFO(First In First Out)** Queue data structure, we can use `Array` as a `Queue`. If you want to use a queue object in a `multi-threads` program, then you can chose to use ruby `Queue class`.
+In Ruby Language, if we want to use a **FIFO(First In First Out)** Queue data structure, we can use `Array` as a `Queue`. If you want to use a queue object in a `multi-threads` program, then you can choose to use ruby `Queue class`.
 
 Let's learn to use them with some examples:
 
@@ -46,7 +46,7 @@ queue.shift # 'cat'
 
 # queue is: ['cow']
 ```
-There are another two methods `#size` and `#empty?` used a lot for queue.
+There are another two methods `#size` and `#empty?` used a lot for a queue.
 For example when we want to loop through the queue
 
 ```ruby
@@ -60,16 +60,16 @@ Ruby Queue class is a `thread-safe`, `blocking` queue implementation. And we can
 
 We can use `#push`, `#enq` and `#<<` methods to enqueue.
 And use `#pop`, `#deq` and `#shift` methods to dequeue.
-Those method are more intuitive than methods in `Array`
+Those methods are more intuitive than methods in `Array`
 
 The blocking feature is decided by `non_block` argument in `#pop` method, the default value for `non_block` is false, so when the queue is empty, the calling thread is suspended until data is pushed onto the queue.
 
 If `non_block` is true, like `queue.pop(true)`, the thread isn't suspended, and `ThreadError` is raised.
 
-I will create another post to demostrate how to use `Queue` in a coding interview problem.
+I will create another post to demonstrate how to use `Queue` in a coding interview problem.
 
-#### Ruby SizedQueue Class
-`SizedQueue` is another Queue implementation which you can specify the size capacity for the queue. If the capacity is full then the `push` operation will be blocked.
+### Ruby SizedQueue Class
+`SizedQueue` is another Queue implementation in which you can specify the size capacity for the queue. If the capacity is full then the `push` operation will be blocked.
 
 ```ruby
 sized_queue = SizedQueue.new(3)  # the maximum size is 5
@@ -85,4 +85,4 @@ sized_queue.push('d')  # This one is blocked.
 ### Last Thing
 There is one disadvantage for using `Queue` and `SizedQueue` classes, they both don't have the `#peek` method to let you peek the head element of the queue.
 
-I will show you how to implment a `thread-safe` `Queue` using `Array` in another Ruby Rate Limiter post.
+I will show you how to implement a `thread-safe` `Queue` using `Array` in another Ruby Rate Limiter post.
